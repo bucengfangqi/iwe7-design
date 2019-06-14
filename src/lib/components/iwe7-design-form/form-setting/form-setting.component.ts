@@ -87,7 +87,7 @@ export class FormSettingComponent extends Iwe7DesignSettingComponent
     this.props.props.push({
       decode: true,
       name: "button",
-      text: "我是按钮",
+      label: "单选框",
       class: {
         [`iwe7-design-button`]: true,
         [`weui-btn`]: true,
@@ -98,4 +98,21 @@ export class FormSettingComponent extends Iwe7DesignSettingComponent
       props: []
     });
   }
+
+  addRadio() {
+    this.props.props.push({
+      decode: true,
+      name: "radio",
+      text: "我是单选框",
+      class: {
+        [`iwe7-design-button`]: true,
+        [`weui-btn`]: true,
+        [`weui-btn_primary`]: true,
+        [`weui-btn_mini`]: false
+      },
+      style: {},
+      props: []
+    });
+  }
+
 }

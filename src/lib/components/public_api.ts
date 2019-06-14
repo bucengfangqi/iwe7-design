@@ -33,6 +33,9 @@ import { component as ScrollViewCom } from "./iwe7-design-scroll-view/public_api
 import { component as MovableViewCom } from "./iwe7-design-movable-view/public_api";
 import { component as CoverViewCom } from "./iwe7-design-cover-view/public_api";
 
+import { component as RadioCom } from "./radio/public_api";
+import { component as BoardCom } from "./iwe6-design-dashboard/public_api";
+
 export const Libs = {
   page: PageCom,
   text: TextCom,
@@ -40,6 +43,7 @@ export const Libs = {
   [`checkbox-group`]: CheckboxGroupCom,
   checkbox: CheckboxCom,
   input: InputCom,
+  radio: RadioCom,
   switch: SwitchCom,
   textarea: TextareaCom,
   form: FormCom,
@@ -51,7 +55,8 @@ export const Libs = {
   view: ViewCom,
   ["scroll-view"]: ScrollViewCom,
   [`movable-view`]: MovableViewCom,
-  [`cover-view`]: CoverViewCom
+  [`cover-view`]: CoverViewCom,
+  board: BoardCom,
 };
 
 import { SwitchComponent } from "./iwe7-design-switch/switch/switch.component";
@@ -78,6 +83,12 @@ import { MovableViewComponent } from "./iwe7-design-movable-view/movable-view/mo
 import { MovableViewSettingComponent } from "./iwe7-design-movable-view/movable-view-setting/movable-view-setting.component";
 import { CoverViewComponent } from "./iwe7-design-cover-view/cover-view/cover-view.component";
 import { CoverViewSettingComponent } from "./iwe7-design-cover-view/cover-view-setting/cover-view-setting.component";
+
+import { RadioComponent } from "./radio/radio/radio.component";
+import { RadioSettingComponent } from "./radio/radio-setting/radio-setting.component";
+
+import { BoardComponent } from "./iwe6-design-dashboard/board/board.component";
+import { BoardSettingComponent } from "./iwe6-design-dashboard/board-setting/board-setting.component";
 
 export const emtryComponents = [
   TextComponent,
@@ -115,5 +126,9 @@ export const emtryComponents = [
   MovableViewComponent,
   MovableViewSettingComponent,
   CoverViewComponent,
-  CoverViewSettingComponent
+  CoverViewSettingComponent,
+  RadioComponent,
+  RadioSettingComponent,
+  BoardComponent,
+  BoardSettingComponent,
 ];

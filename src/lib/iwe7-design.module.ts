@@ -26,6 +26,10 @@ import { HomePage } from "./pages/home/home.component";
 import { SwiperModule } from "ngx-swiper-wrapper";
 import { SWIPER_CONFIG } from "ngx-swiper-wrapper";
 import { SwiperConfigInterface } from "ngx-swiper-wrapper";
+import { RadioComponent } from './components/radio/radio/radio.component';
+import { RadioSettingComponent } from './components/radio/radio-setting/radio-setting.component';
+import { BoardComponent } from './components/iwe6-design-dashboard/board/board.component';
+import { BoardSettingComponent } from './components/iwe6-design-dashboard/board-setting/board-setting.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: "horizontal",
@@ -87,7 +91,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ResourcePage,
     RoutingPage,
     DatabasePage,
-    HomePage
+    HomePage,
+    RadioComponent,
+    RadioSettingComponent,
+    BoardComponent,
+    BoardSettingComponent
   ],
   exports: [Iwe7DesignDirective, DesignLayoutComponent, RouterModule],
   entryComponents: [...emtryComponents],

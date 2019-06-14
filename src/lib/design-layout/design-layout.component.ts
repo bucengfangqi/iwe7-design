@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
-import * as _ from "underscore";
-import { Iwe7DesignAddonService } from "../iwe7-design-addon.service";
-import { Iwe7DesignLibraryService } from "../iwe7-design-library.service";
+import { Component, OnInit } from '@angular/core';
+import * as _ from 'underscore';
+import { Iwe7DesignAddonService } from '../iwe7-design-addon.service';
+import { Iwe7DesignLibraryService } from '../iwe7-design-library.service';
 @Component({
-  selector: "design-layout",
-  templateUrl: "./design-layout.component.html",
-  styleUrls: ["./design-layout.component.scss"]
+  selector: 'design-layout',
+  templateUrl: './design-layout.component.html',
+  styleUrls: ['./design-layout.component.scss']
 })
 export class DesignLayoutComponent implements OnInit {
   editPage: any;
@@ -14,10 +14,10 @@ export class DesignLayoutComponent implements OnInit {
   constructor(
     public addon: Iwe7DesignAddonService,
     public lib: Iwe7DesignLibraryService
-  ) {}
+  ) { }
 
   ngOnInit() {
-    this.activeModule = this.addon.app.props["runner"];
+    this.activeModule = this.addon.app.props['runner'];
     this.editPage = this.activeModule.props[0];
   }
 

@@ -1,7 +1,7 @@
-import { Injectable, InjectionToken, Inject } from "@angular/core";
-import * as _ from "underscore";
+import { Injectable, InjectionToken, Inject } from '@angular/core';
+import * as _ from 'underscore';
 // 组件库
-export const DESIGN_LIBRARYS = new InjectionToken("DESIGN_LIBRARYS");
+export const DESIGN_LIBRARYS = new InjectionToken('DESIGN_LIBRARYS');
 @Injectable()
 export class Iwe7DesignLibraryService {
   components: any;

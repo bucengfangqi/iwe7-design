@@ -11,7 +11,7 @@ import {
 } from "@angular/core";
 import { Iwe7DesignLibraryService } from "./iwe7-design-library.service";
 import * as _ from "underscore";
-import { fromEvent } from "rxjs/observable/fromEvent";
+import { fromEvent } from "rxjs";
 /**
  *design="name;class 'class';style 'style';drag true; drop true;"
  */
