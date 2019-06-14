@@ -1,1 +1,7 @@
-<h1>{{props.title}}</h1>
+<div [ngStyle]="{
+  background: props.titleBg,
+  color: props.titleColor,
+  'text-align': props.titlePosition,
+  'font-size':props.titleFontSize+'px',
+  'line-height':props.titlelineHeight+'px'
+}">{{props.title}}</div>

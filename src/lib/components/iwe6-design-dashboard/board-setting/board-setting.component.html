@@ -1,1 +1,30 @@
-<input type="text" [(ngModel)]="props.title" placeholder="标题">
+<label for="title">
+    <code>标题文本</code><br>
+    <input id=title type="text" [(ngModel)]="props.title" placeholder="标题"><br>
+</label>
+<br>
+<label>
+    <code>标题颜色</code><br>
+    字体颜色<input [(ngModel)]="props.titleColor" type="color">
+    背景颜色<input id="titleBg" [(ngModel)]="props.titleBg" type="color">
+</label>
+
+<br>
+<label>
+    <code>标题位置</code><br>
+    左<input type="radio" [(ngModel)]="props.titlePosition" value="left">
+    中<input type="radio" [(ngModel)]="props.titlePosition" value="center">
+    右<input type="radio" [(ngModel)]="props.titlePosition" value="right">
+</label>
+
+<br>
+<label>
+    <code>标题字体行高</code><br>
+    <input type="range" class="custom-range" min="0" max="60" [(ngModel)]="props.titlelineHeight">
+</label>
+
+<br>
+<label>
+    <code>标题字体大小</code><br>
+    <input type="range" class="custom-range" min="0" max="60" [(ngModel)]="props.titleFontSize">
+</label>
