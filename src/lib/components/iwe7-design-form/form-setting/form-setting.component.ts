@@ -87,7 +87,7 @@ export class FormSettingComponent extends Iwe7DesignSettingComponent
     this.props.props.push({
       decode: true,
       name: "button",
-      label: "单选框",
+      text: "我是按钮",
       class: {
         [`iwe7-design-button`]: true,
         [`weui-btn`]: true,

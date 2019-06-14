@@ -9,6 +9,8 @@ import {
   Iwe7DesignSettingComponent,
   Iwe7DesignComponent
 } from "../../interface";
+
+
 @Component({
   selector: "input-setting",
   templateUrl: "./input-setting.component.html",

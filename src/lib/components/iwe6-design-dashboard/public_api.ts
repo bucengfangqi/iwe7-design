@@ -8,14 +8,11 @@ export const component = {
   setting: BoardSettingComponent,
   preview: BoardComponent,
   props: {
-    decode: true,
-    name: 'board',
-    text: "测试label",
-    class: {
-      [`iwe7-design-text`]: true
-    },
+    name: "board",
+    title: "请输入大标题",
     style: {
-      display: "block"
+      display: 'block',
+      [`background-color`]: '#efefef'
     },
     props: []
   }
