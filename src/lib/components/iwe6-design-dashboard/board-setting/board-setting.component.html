@@ -20,11 +20,16 @@
 <br>
 <label>
     <code>标题字体行高</code><br>
-    <input type="range" class="custom-range" min="0" max="60" [(ngModel)]="props.titlelineHeight">
+    <input type="range" class="custom-range" min="30" max="60" [(ngModel)]="props.titlelineHeight">
 </label>
 
 <br>
 <label>
     <code>标题字体大小</code><br>
-    <input type="range" class="custom-range" min="0" max="60" [(ngModel)]="props.titleFontSize">
+    <input type="range" class="custom-range" min="12" max="45" [(ngModel)]="props.titleFontSize">
+</label>
+<hr>
+<label>
+    <code>图表高度</code><br>
+    <input type="range" class="custom-range" min="100" max="400" [(ngModel)]="props.chartsHeight">
 </label>

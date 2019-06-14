@@ -5,3 +5,5 @@
   'font-size':props.titleFontSize+'px',
   'line-height':props.titlelineHeight+'px'
 }">{{props.title}}</div>
+
+<div echarts [options]="chartOption" [ngStyle]="{height: props.chartsHeight+'px'}"></div>

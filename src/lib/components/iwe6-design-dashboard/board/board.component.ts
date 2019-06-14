@@ -10,7 +10,7 @@ import {
   Iwe7DesignComponent
 } from "../../interface";
 
-
+import { EChartOption } from 'echarts';
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
@@ -22,5 +22,21 @@ export class BoardComponent extends Iwe7DesignComponent implements OnInit {
     super(ele, render);
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  chartOption: EChartOption = {
+    xAxis: {
+      type: 'category',
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [{
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'line'
+    }]
+  }
+
+
 }

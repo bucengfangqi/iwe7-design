@@ -15,6 +15,7 @@ export const component = {
     titlePosition: 'center',
     titleFontSize: 22,
     titlelineHeight: 45,
+    chartsHeight:400,
     style: {
       display: 'block',
       [`background-color`]: '#efefef',
